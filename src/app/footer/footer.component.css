@@ -1,0 +1,20 @@
+/* Estilos para o footer */
+footer {
+  background-color: #87CEEB;
+  color: #fff; /* Cor do texto no footer */
+  padding: 30px 0;
+  text-align: center;
+  right: 100%;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 34px;
+  margin: 0 15px;
+  text-decoration: none; /* Remove sublinhado de links */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff9800;
+}
