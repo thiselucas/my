@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<header>
+  <div class="menu-toggle" (click)="toggleMenu()"><mat-icon>reorder</mat-icon></div>
+</header>
+<nav class="nav-menu" [ngClass]="{'open': isMenuOpen}">
+  <ul>
+    <li><a href="#"><mat-icon>weekend</mat-icon> Pessoal</a></li>
+    <li><a href="#"><mat-icon>work_outline</mat-icon> Profissional</a></li>
+    <li><a href="#"><mat-icon>dvr</mat-icon> Projetos</a></li>
+    <li><a href="#"><mat-icon> contacts</mat-icon> Vamos conversar</a></li>
+  </ul>
+</nav>
+<div class="content">
+</div>

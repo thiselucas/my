@@ -1,0 +1,98 @@
+header {
+  background-color: #8FBC8F; /* Cor de fundo do footer */
+  color: #006400;
+  padding: 60px 0;
+  text-align: center;
+  right: 100%;
+  position: fixed; /* Define a posição como fixa para que o menu não role com a página */
+  top: 0; /* Alinha o menu no topo da página */
+  left: 0; /* Alinha o menu à esquerda da página */
+  bottom: 0; /* Alinha o menu na parte inferior da página */
+  right: 0; /* Alinha o menu à direita da página */
+
+
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1; /* Garante que o ícone do menu esteja na frente do conteúdo */
+}
+
+.menu-toggle:hover {
+  transform: scale(1.5);
+  background: none;
+}
+
+.menu-toggle mat-icon {
+  font-size: 35px;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Inicialmente oculto */
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s ease;
+}
+
+.open {
+  width: 80%; /* Define a largura como 100% para ocupar a página inteira */
+  position: fixed; /* Define a posição como fixa para que o menu não role com a página */
+  top: 0; /* Alinha o menu no topo da página */
+  left: 0; /* Alinha o menu à esquerda da página */
+  bottom: 0; /* Alinha o menu na parte inferior da página */
+  right: 0; /* Alinha o menu à direita da página */
+  background-color: #32CD32;
+  z-index: 1000; /* Define uma alta camada z-index para garantir que o menu esteja acima do conteúdo da página */
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espaçamento vertical entre os itens */
+
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333; /* Cor do texto */
+  margin-left: 20px; /* Espaçamento horizontal entre o ícone e o texto */
+  font-size: 20px; /* Tamanho do texto */
+  margin-top: 50px;
+
+}
+
+.nav-menu mat-icon {
+  font-size: 24px; /* Tamanho do ícone */
+}
+
+.content {
+  margin-left: 270px; /* Para deixar espaço para o menu */
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+
+
+
+.nav-menu ul li a:hover {
+  font-size: 20px; /* Aumenta o tamanho da fonte para 20px ao passar o mouse */
+  background: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
