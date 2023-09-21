@@ -2,13 +2,14 @@ import { Component, ElementRef, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
+import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from '../footer/footer.component';
+
 
 @Component({
   selector: 'app-navmenu',
   standalone: true,
-  imports: [CommonModule, RouterLink, MatToolbarModule, MatIconModule, RouterModule, FooterComponent],
+  imports: [CommonModule, RouterLink, MatToolbarModule, MatIconModule, RouterModule, FooterComponent, ],
   templateUrl: './navmenu.component.html',
   styleUrls: ['./navmenu.component.css'],
 })

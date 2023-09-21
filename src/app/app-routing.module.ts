@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavmenuComponent } from './navmenu/navmenu.component';
+import { WorksComponent } from './works/works.component';
+
+
 
 const routes: Routes = [
-  {path: '', component: NavmenuComponent, title: 'Lucas Escoto da Luz'}
+  {path: '', component: WorksComponent, title: 'Lucas Escoto da Luz'}
 ];
 
 @NgModule({

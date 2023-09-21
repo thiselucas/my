@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -21,7 +22,12 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     MatToolbarModule,
     RouterLink,
-    CommonModule
+    CommonModule,
+    NgChartsModule,
+
+
+
+
 
   ],
   providers: [],
