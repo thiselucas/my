@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavmenuComponent } from './navmenu/navmenu.component';
 import { WorksComponent } from './works/works.component';
+
 
 
 

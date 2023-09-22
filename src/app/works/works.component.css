@@ -1,7 +1,13 @@
-.mat-stepper-horizontal {
-  margin-top: 8px;
+button {
+  margin-right: 8px;
+  background-color: #00CED1;
+  border-radius: 10% 10%;
+  margin: 15px;
+
 }
 
-.mat-form-field {
-  margin-top: 16px;
+button:hover {
+  background-color: #ff9800;
 }
+
+
