@@ -1,25 +1,30 @@
 <app-navmenu></app-navmenu>
-<div fxLayout="column" fxLayoutAlign="center center">
-  <div fxLayout="row wrap" fxLayoutAlign="center">
-    <div fxLayout="column" fxLayoutGap="16px" fxLayoutAlign="center center"> <!-- Container das duas colunas -->
-      <div fxLayout="row wrap" fxLayoutAlign="start center">
-        <button mat-button (click)="openDialog(1)">Desenvolvedor Front End (PJ)</button>
-        <button mat-button (click)="openDialog(2)">Analista Administrativo</button>
-      </div>
-      <div fxLayout="row wrap" fxLayoutAlign="start center">
-        <button mat-button (click)="openDialog(3)">Estagiário Financeiro</button>
-        <button mat-button (click)="openDialog(4)">Estagiário Administração</button>
-      </div>
-      <div fxLayout="row wrap" fxLayoutAlign="start center">
-        <button mat-button (click)="openDialog(5)">Agente de Atendimento</button>
-        <button mat-button (click)="openDialog(6)">Estágio Técnico Administração</button>
-      </div>
-      <div fxLayout="row wrap" fxLayoutAlign="start center">
-        <button mat-button (click)="openDialog(7)">Estágio Ensino Médio</button>
-        <button mat-button (click)="openDialog(8)">Estágio Ensino Médio</button>
+<div class="works">
+  <div class="centered-button">
+    <button mat-raised-button color="primary" (click)="downloadFile()" class="curriculo">Currículo PDF</button>
+  </div>
+  <h1>Experiências</h1>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row wrap" fxLayoutAlign="center center">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+        <button mat-button (click)="openDialog(1)" class="custom-button" style="color: #fff">Desenvolvedor Front End
+          (PJ)</button>
+        <button mat-button (click)="openDialog(2)" class="custom-button" style="color: #fff">Analista
+          Administrativo</button>
+        <button mat-button (click)="openDialog(3)" class="custom-button" style="color: #fff">Estagiário
+          Financeiro</button>
+        <button mat-button (click)="openDialog(4)" class="custom-button" style="color: #fff">Estagiário
+          Administração</button>
+        <button mat-button (click)="openDialog(5)" class="custom-button" style="color: #fff">Agente de
+          Atendimento</button>
+        <button mat-button (click)="openDialog(6)" class="custom-button" style="color: #fff">Estágio Técnico
+          Administração</button>
+        <button mat-button (click)="openDialog(7)" class="custom-button" style="color: #fff">Estágio Ensino
+          Médio</button>
+        <button mat-button (click)="openDialog(8)" class="custom-button" style="color: #fff">Estágio Ensino
+          Médio</button>
       </div>
     </div>
   </div>
 </div>
-
 <app-footer></app-footer>

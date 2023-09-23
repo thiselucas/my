@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #87CEEB; /* Cor de fundo do footer */
+  background-image: linear-gradient(to bottom, #808080, #DCDCDC);
   color: #fff;
   padding: 60px 0;
   text-align: center;

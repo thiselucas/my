@@ -13,6 +13,7 @@ import { AgtHmdComponent } from '../agt-hmd/agt-hmd.component';
 import { EstagioPrefa2Component } from '../estagio-prefa2/estagio-prefa2.component';
 import { EstagioEptcComponent } from '../estagio-eptc/estagio-eptc.component';
 import { EstagioDigifileComponent } from '../estagio-digifile/estagio-digifile.component';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-works',
@@ -25,12 +26,13 @@ import { EstagioDigifileComponent } from '../estagio-digifile/estagio-digifile.c
     RouterLink,
     MatButtonModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.css'],
 })
 export class WorksComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private snackBar: MatSnackBar) {}
 
   mostrarCaixaDeTexto1 = false;
   mostrarCaixaDeTexto2 = false;
@@ -100,5 +102,30 @@ export class WorksComponent {
         console.log(`Dialog result: ${result}`);
       });
     }
+  }
+
+  downloadFile() {
+    const inProgressSnackBarRef = this.snackBar.open(
+      'Iniciando o download...',
+      'Fechar',
+      {
+        duration: 2000,
+      }
+    );
+
+    setTimeout(() => {
+      this.snackBar.open('Download finalizado!', 'Fechar', {
+        duration: 2000,
+      });
+
+
+      const fileName = 'Curriculo_Lucas_Escoto_da_Luz.pdf'; // Nome do arquivo
+      const fileUrl =
+        '../../assets/docs/Lucas Escoto da Luz - Curriculo Atualizado.pdf';
+      const a = document.createElement('a');
+      a.href = fileUrl;
+      a.download = fileName;
+      a.click();
+    }, 2000);
   }
 }

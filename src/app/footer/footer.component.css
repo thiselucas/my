@@ -1,10 +1,11 @@
 /* Estilos para o footer */
 footer {
-  background-color: #87CEEB;
+  background-image: linear-gradient(to bottom, #808080, #DCDCDC);
   color: #fff; /* Cor do texto no footer */
   padding: 30px 0;
   text-align: center;
   right: 100%;
+  margin-top: 1px;
 }
 
 .social-icons a {
