@@ -41,21 +41,21 @@ header:hover {
   position: fixed;
   top: 0;
   left: -250px; /* Inicialmente oculto */
-  width: 250px;
+  width: 100px;
   height: 100%;
   transition: left 0.3s ease;
 }
 
 
 .open {
-  width: 80%; /* Define a largura como 100% para ocupar a página inteira */
-  position: fixed; /* Define a posição como fixa para que o menu não role com a página */
-  top: 0; /* Alinha o menu no topo da página */
-  left: 0; /* Alinha o menu à esquerda da página */
-  bottom: 0; /* Alinha o menu na parte inferior da página */
-  right: 0; /* Alinha o menu à direita da página */
-  background-color: #E0FFFF;
-  z-index: 1000; /* Define uma alta camada z-index para garantir que o menu esteja acima do conteúdo da página */
+  width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #87CEFA, #6495ED, #1E90FF);
+  z-index: 1000;
 }
 
 .nav-menu ul {
@@ -74,10 +74,13 @@ header:hover {
 
 .nav-menu a {
   text-decoration: none;
-  color: #333; /* Cor do texto */
-  margin-left: 20px; /* Espaçamento horizontal entre o ícone e o texto */
-  font-size: 20px; /* Tamanho do texto */
+  color: #fff;
+  margin-left: 20px;
+  font-size: 20px;
   margin-top: 50px;
+  font-family: 'Major Mono Display', monospace;
+
+
 }
 
 .nav-menu mat-icon {

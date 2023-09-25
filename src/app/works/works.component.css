@@ -121,24 +121,24 @@ width: 650px;
 .rounded-button {
   width: 105px;
   height: 36px;
-  background-color: #0B57D0; /* Cor de fundo do botão */
-  color: #FFFFFF; /* Cor do texto */
-  border-radius: 25px; /* Raio de borda para tornar o botão arredondado */
-  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #0B57D0;
+  color: #FFFFFF;
+  border-radius: 25px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* Para posicionar a linha vertical */
+  position: relative;
 }
 
 
 .vertical-line {
   position: absolute;
   height: 100%;
-  width: 1px; /* Largura da linha vertical */
-  background-color: #fff; /* Cor da linha vertical */
-  left: 65%; /* Posição no meio do botão */
-  transform: translateX(-50%); /* Centralizar a linha vertical horizontalmente */
+  width: 1px;
+  background-color: #fff;
+  left: 65%;
+  transform: translateX(-50%);
 }
 
 .rounded-button mat-icon {
@@ -151,23 +151,23 @@ width: 650px;
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto 2fr; /* Define duas colunas, uma para o texto e outra para os ícones */
-  align-items: center; /* Centraliza verticalmente */
+  grid-template-columns: auto 2fr;
+  align-items: center;
 }
 
 .icons {
   display: flex;
-  justify-content: flex-end; /* Alinha os ícones à direita */
-  gap: 10px; /* Espaçamento entre os ícones */
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .icon-grid {
-  display: flex; /* Usar display flex para colocar ícones em linha única */
-  align-items: center; /* Centralizar verticalmente */
-  justify-content: center; /* Centralizar horizontalmente */
-  gap: 10px; /* Espaçamento entre ícones */
-  max-width: 100%; /* Largura máxima do grid */
-  padding: 20px; /* Espaçamento interno do grid */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  padding: 20px;
 }
 
 .icon-grid i {
@@ -180,7 +180,7 @@ width: 650px;
 
 .works {
   align-items: center;
-  background-image: linear-gradient(to bottom, #87CEFA, #6495ED, #1E90FF);
+  background-image: linear-gradient(to bottom, #000000, #1C1C1C, #00BFFF);
   width: 100%;
 }
 

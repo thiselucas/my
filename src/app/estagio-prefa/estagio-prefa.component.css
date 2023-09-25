@@ -8,16 +8,13 @@ p {
 }
 
 h1 {
-
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
-  color: #4682B4;
+  color: #00FFFF;
   font-size: 30px;
 }
 
-
 mat-stepper {
-  background-color: #87CEEB;
+  background-image: linear-gradient(to bottom, #808080	, #87CEFA);
 }
-
 
