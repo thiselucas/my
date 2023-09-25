@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to bottom, #808080, #DCDCDC);
+  background-image: linear-gradient(to bottom, #87CEFA, #87CEEB);
   color: #fff;
   padding: 60px 0;
   text-align: center;
@@ -13,6 +13,7 @@ header {
   left: 0; /* Alinha o menu à esquerda da página */
   bottom: 0; /* Alinha o menu na parte inferior da página */
   right: 0; /* Alinha o menu à direita da página */
+  margin-bottom: 1px;
 }
 
 header:hover {

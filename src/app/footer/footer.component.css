@@ -1,6 +1,6 @@
 /* Estilos para o footer */
 footer {
-  background-image: linear-gradient(to bottom, #808080, #DCDCDC);
+  background-image: linear-gradient(to bottom, #87CEFA, #87CEFA);
   color: #fff; /* Cor do texto no footer */
   padding: 30px 0;
   text-align: center;
@@ -19,3 +19,4 @@ footer {
 .social-icons a:hover {
   color: #ff9800;
 }
+

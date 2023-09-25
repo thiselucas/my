@@ -1,5 +1,5 @@
 import { EstagioPrefaComponent } from './../estagio-prefa/estagio-prefa.component';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavmenuComponent } from '../navmenu/navmenu.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -14,6 +14,9 @@ import { EstagioPrefa2Component } from '../estagio-prefa2/estagio-prefa2.compone
 import { EstagioEptcComponent } from '../estagio-eptc/estagio-eptc.component';
 import { EstagioDigifileComponent } from '../estagio-digifile/estagio-digifile.component';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @Component({
   selector: 'app-works',
@@ -27,12 +30,23 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     MatButtonModule,
     MatDialogModule,
     MatSnackBarModule,
+    MatCardModule,
+    MatIconModule,
+    CarouselModule,
   ],
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.css'],
 })
 export class WorksComponent {
+  isExpanded = false;
+
+  toggleContent() {
+    this.isExpanded = !this.isExpanded;
+  }
+
   constructor(public dialog: MatDialog, private snackBar: MatSnackBar) {}
+  @Input() textContent2: string = 'Assunto: Apresentação Profissional';
+  @Input() textContent: string = 'Confira minhas experiências profissionais:'
 
   mostrarCaixaDeTexto1 = false;
   mostrarCaixaDeTexto2 = false;
@@ -117,7 +131,6 @@ export class WorksComponent {
       this.snackBar.open('Download finalizado!', 'Fechar', {
         duration: 2000,
       });
-
 
       const fileName = 'Curriculo_Lucas_Escoto_da_Luz.pdf'; // Nome do arquivo
       const fileUrl =
