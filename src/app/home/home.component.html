@@ -1,0 +1,20 @@
+<div class="apresentacao">
+<div *ngIf="showProgressBar; else siteContent" class="progress-container">
+  <div class="progress-bar" [style.width.%]="progressValue"></div>
+  <div class="progress-text">{{ progressValue }}%</div>
+  <div class="container">
+
+    <div class="status-bar">
+      <div class="typing-container">
+        <p class="text">{{ textContent }}</p>
+      </div>
+    </div>
+    </div>
+
+</div>
+</div>
+<ng-template #siteContent>
+  <app-works></app-works>
+</ng-template>
+
+
