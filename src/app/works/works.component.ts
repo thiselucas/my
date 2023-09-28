@@ -132,7 +132,7 @@ export class WorksComponent {
         duration: 2000,
       });
 
-      const fileName = 'Curriculo_Lucas_Escoto_da_Luz.pdf'; // Nome do arquivo
+      const fileName = 'Curriculo_Lucas_Escoto_da_Luz.pdf';
       const fileUrl =
         '../../assets/docs/Lucas Escoto da Luz - Curriculo Atualizado.pdf';
       const a = document.createElement('a');
