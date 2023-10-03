@@ -4,12 +4,13 @@ import { WorksComponent } from './works/works.component';
 import { EmailComponent } from './email/email.component';
 import { HomeComponent } from './home/home.component';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
 
 const routes: Routes = [
-  {path: '', component: PersonalInformationComponent, title: 'Lucas Escoto da Luz'}
+  {path: '', component: ProjectsComponent, title: 'Lucas Escoto da Luz'}
 ];
 
 @NgModule({

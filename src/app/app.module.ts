@@ -10,11 +10,13 @@ import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgChartsModule } from 'ng2-charts';
 import { WorksComponent } from './works/works.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { WorksComponent } from './works/works.component';
     RouterLink,
     CommonModule,
     NgChartsModule,
+    ProjectsComponent
 
 
 
