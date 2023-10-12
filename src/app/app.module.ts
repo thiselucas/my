@@ -12,12 +12,8 @@ import { NgChartsModule } from 'ng2-charts';
 import { WorksComponent } from './works/works.component';
 import { ProjectsComponent } from './projects/projects.component';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,16 +23,9 @@ import { ProjectsComponent } from './projects/projects.component';
     RouterLink,
     CommonModule,
     NgChartsModule,
-    ProjectsComponent
-
-
-
-
-
+    ProjectsComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-
-}
+export class AppModule {}

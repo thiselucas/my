@@ -50,7 +50,7 @@
 
 .about-content {
   align-items: center;
-  background-color: linear-gradient(to bottom, #000000, #1C1C1C, #00BFFF);
+
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
@@ -62,7 +62,6 @@
 }
 
 .about-me {
-  background-image: linear-gradient(to bottom,#1C1C1C, #00BFFF);
   color: #FFFFFF;
 }
 
@@ -102,7 +101,7 @@
   max-width: 60rem;
   line-height: 2;
   text-align: justify;
-  margin: 10px;
+  margin-left: 20px;
 }
 
 
@@ -125,15 +124,36 @@
   flex-wrap: wrap;
 }
 
-.skills-skill {
+ .skills-skill {
   padding: 1rem 2rem;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
   font-size: 1.6rem;
-  background-image: linear-gradient(to bottom, #4F4F4F, #D3D3D3, #D3D3D3	);
+  background: transparent;
   border-radius: 5px;
+  border: 2px solid #00FFFF;
   font-weight: 3000;
-  color: #4F4F4F;
+  color: #fff;
 }
 
 
+
+.skills-skill::before,
+.skills-skill::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, purple 50%, #0099CC 100%);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.skills-skill:hover::before,
+.skills-skill:hover::after {
+  transform: scaleX(1); /* Expandir largura no hover */
+  transition: transform 0.3s ease-in-out;
+}

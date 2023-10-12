@@ -1,10 +1,5 @@
-<app-navmenu></app-navmenu>
 <div class="works">
-  <div class="centered-button">
-    <div class="pulse">
-    <button mat-raised-button color="primary" (click)="downloadFile()" class="curriculo">Currículo em PDF</button>
-    </div>
-  </div>
+  <h1 class="title left">Histórico Profissional <span>&#9660;</span></h1>
   <div class="word-screen">
     <div class="menu-bar">
       <div class="grid-container">
@@ -53,11 +48,13 @@
       </div>
       <div class="icon-grid">
         <button class="rounded-button">
-          <span class="vertical-line"></span>
-          Enviar
-          <mat-icon class="arrow-drop">arrow_drop_down</mat-icon>
-        </button>
-        <mat-icon class="icons-email"> format_color_text</mat-icon>
+          <div class="centered-button">
+            <div class="pulse">
+            <button mat-raised-button color="primary" (click)="downloadFile()" class="curriculo"> Baixe o currículo em PDF</button>
+            </div>
+          </div>
+          </button>
+        <mat-icon class="icons-email-a"> format_color_text</mat-icon>
         <mat-icon class="icons-email"> attach_file</mat-icon>
         <mat-icon class="icons-email">link</mat-icon>
         <mat-icon class="icons-email"> insert_emoticon</mat-icon>
@@ -77,4 +74,3 @@
   <br>
   <br>
   <br>
-  <app-footer></app-footer>

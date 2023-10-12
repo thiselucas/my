@@ -1,97 +1,49 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&display=swap');
 
 header {
-  background-image: linear-gradient(to bottom, #87CEFA, #87CEEB);
-  color: #fff;
-  padding: 60px 0;
-  text-align: center;
-  right: 100%;
-  top: 0; /* Alinha o menu no topo da página */
-  left: 0; /* Alinha o menu à esquerda da página */
-  bottom: 0; /* Alinha o menu na parte inferior da página */
-  right: 0; /* Alinha o menu à direita da página */
-  margin-bottom: 1px;
-}
-
-header:hover {
-  color: #ff9800;
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  cursor: pointer;
-  z-index: 1; /* Garante que o ícone do menu esteja na frente do conteúdo */
-}
-
-.menu-toggle:hover {
-  transform: scale(1.5);
-  background: none;
-}
-
-.menu-toggle mat-icon {
-  font-size: 35px;
-}
-
-.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
   position: fixed;
-  top: 0;
-  left: -250px; /* Inicialmente oculto */
-  width: 100px;
-  height: 100%;
-  transition: left 0.3s ease;
-}
-
-
-.open {
-  width: 20%;
-  position: fixed;
-  top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  background-image: linear-gradient(to bottom, #87CEFA, #6495ED, #1E90FF);
   z-index: 1000;
 }
 
-.nav-menu ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.logo {
+  max-width: 150px;
 }
+
+.nav-menu {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 
 .nav-menu li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px; /* Espaçamento vertical entre os itens */
+  margin-right: 25px;
+  position: relative;
 }
 
-.nav-menu a {
+a {
   text-decoration: none;
   color: #fff;
-  margin-left: 20px;
   font-size: 20px;
-  margin-top: 50px;
   font-family: 'Major Mono Display', monospace;
-
-
 }
 
-.nav-menu mat-icon {
-  font-size: 24px; /* Tamanho do ícone */
+/* Estilo quando o mouse estiver passando por cima */
+a:hover {
+  border-bottom: 12px solid #fff; /* Defina a cor e espessura da borda ao passar o mouse */
 }
-
-.nav-menu ul li a:hover {
-  font-size: 20px; /* Aumenta o tamanho da fonte para 20px ao passar o mouse */
-  background: none;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-

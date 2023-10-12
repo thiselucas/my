@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&family=Raleway:wght@100&family=Roboto&family=Space+Grotesk:wght@300&display=swap');
 
+.title {
+  background: none;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  font-family: 'Major Mono Display', monospace;
+  align-items: center;
+}
+
+
+/* Adicione um novo estilo para posicionar à esquerda */
+.title.left {
+  margin-left: auto; /* Empurra o título para a esquerda */
+  cursor: pointer;
+
+}
+
+/* Mantenha o título à esquerda */
+.title.left span {
+  margin-left: 0; /* Remova o espaço entre o título e o ícone de seta */
+}
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -13,13 +36,13 @@
 }
 
 .pulse {
-  animation: pulse 1s infinite;
+  animation: pulse 4s infinite;
 }
 
 
 .word-screen {
   width: 700px;
-  background-color: #fff;
+  background-color: #fff !important;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: auto;
@@ -29,6 +52,7 @@
 }
 
 .title-email {
+  background: none;
   color: #041E49;
   font-size: 16px;
   text-align: justify;
@@ -52,6 +76,7 @@
 }
 
 .document {
+  background: none;
   padding: 10px;
   border: none;
   color: #747775;
@@ -61,6 +86,7 @@
 }
 
 .status-bar {
+  background: none;
   padding: 10px;
   text-align: right;
   width: 400px;
@@ -68,10 +94,12 @@
 }
 
 .typing-container {
+  background: none;
   padding: 20px;
 }
 
 .text {
+  background: none;
   font-size: 16px;
   text-align: justify;
   white-space: nowrap;
@@ -170,18 +198,18 @@ width: 650px;
 }
 
 .icon-grid i {
-  font-size: 24px; /* Tamanho dos ícones */
+  font-size: 24px;
 }
 
+
+.icons-email-a {
+  margin-right: -10px;
+}
 .icons-email {
   color: #000;
+  margin-left: 20px;
 }
 
-.works {
-  align-items: center;
-  background-image: linear-gradient(to bottom, #000000, #1C1C1C, #00BFFF);
-  width: 100%;
-}
 
 h1 {
   text-align: center;
@@ -197,6 +225,7 @@ div.centered-button {
 
 .curriculo {
   font-family: 'Major Mono Display', monospace;
+  padding: 25px;
 }
 
 .curriculo:hover {
@@ -212,15 +241,16 @@ div.centered-button {
   margin:  2em  1.5em 2em;
   border-radius: 10px;
   transition: background-color 0.3s, transform 0.1s;
-  border: 0.5px dotted #00FFFF; /* Estilo de borda pontilhada preta */
-  margin: 8px; /* Margem para separar os botões da borda */
+  border: 0.5px dotted #00FFFF;
+  margin: 8px;
 }
+
 
 
 button {
   padding: 10px 20px;
   border: none;
-  border-radius: 5px; /* Borda levemente arredondada */
+  border-radius: 5px;
   background-color: #3498db;
   color: #fff;
   cursor: pointer;
@@ -232,6 +262,4 @@ button:hover {
 }
 
 
-.div-profissoes {
-  margin: 0;
-}
+

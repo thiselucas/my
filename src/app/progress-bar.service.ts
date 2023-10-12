@@ -3,7 +3,7 @@ import { BehaviorSubject, Observable, timer } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProgressBarService {
   private _progress = new BehaviorSubject<number>(0);
@@ -12,13 +12,13 @@ export class ProgressBarService {
     return this._progress.asObservable();
   }
 
-  constructor() { }
+  constructor() {}
 
   startProgressBar(durationInSeconds: number): void {
-    timer(0, (durationInSeconds * 1000) / 100).pipe(
-      take(101)
-    ).subscribe((value) => {
-      this._progress.next(value);
-    });
+    timer(0, (durationInSeconds * 1000) / 100)
+      .pipe(take(101))
+      .subscribe((value) => {
+        this._progress.next(value);
+      });
   }
 }

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&family=Raleway:wght@100&family=Roboto&family=Space+Grotesk:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&family=Raleway:wght@100&family=Roboto&family=Space+Grotesk:wght@300&display=swap');
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Margem superior para espaçamento */
+  margin-bottom: 20px; /* Margem inferior para espaçamento */
+  height: 100vh; /* Para centralizar verticalmente */
+}
+
+.topline {
+  width: 30%;
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Major Mono Display', monospace;
+  margin-right: 0;
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  width: 65%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div {
+  align-items: center;
+  background: none !important;
+  width: 100%;
+}
+
+.form.ng-untouched.ng-pristine.ng-valid {
+  width: 700px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin: auto;
+  overflow: hidden;
+  margin: auto;
+}
+
+.input {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  color: #747775;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  width: 630px;
+  height: 30px;
+  padding: 10px;
+  color: #747775;
+  text-align: justify;
+  font-size: 14px;
+  margin: 15px 15px auto;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+.form-group {
+  width: 700px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  overflow: hidden;
+  margin:  auto ;
+}
+
+ .form-control {
+  width: 700px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: auto;
+  overflow: hidden;
+  margin:  auto ;
+
+}
+
+.textarea {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  color: #041E49;
+  margin: 20px 15px;
+  width: 650px;
+  height: 400px;
+  margin-top: 2em;
+  border-right: 0;
+  border-left: 0;
+
+  resize: none;
+}
+
+.button {
+  font-family: 'Space Grotesk', sans-serif;
+  position: relative;
+  bottom: 0;
+  left: 600px;
+  margin-bottom: 20px;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 25px;
+  background-color: #0B57D0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+

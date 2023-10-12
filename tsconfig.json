@@ -2,7 +2,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -10,6 +11,10 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "react": ["../node_modules/react"],
+      "react-dom": ["../node_modules/react-dom"]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
