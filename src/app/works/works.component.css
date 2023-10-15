@@ -1,25 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&family=Raleway:wght@100&family=Roboto&family=Space+Grotesk:wght@300&display=swap');
 
+.pair-works {
+  border-top-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+}
+
+p {
+  margin: 5vh;
+  margin-left: 0;
+  text-align: justify;
+  font: 20px 'Space Grotesk', sans-serif;
+  color: #7C7C7C;
+}
+.works-information {
+  line-height: 1.1;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: justify;
+  font: 48px 'Major Mono Display', monospace;
+  color: #1c58f8;
+
+}
+
+
+
+
 .title {
   background: none;
   font-size: 30px;
   color: #fff;
   padding: 10px;
-  font-family: 'Major Mono Display', monospace;
-  align-items: center;
-}
-
-
-/* Adicione um novo estilo para posicionar à esquerda */
-.title.left {
-  margin-left: auto; /* Empurra o título para a esquerda */
-  cursor: pointer;
-
-}
-
-/* Mantenha o título à esquerda */
-.title.left span {
-  margin-left: 0; /* Remova o espaço entre o título e o ícone de seta */
 }
 
 
@@ -48,7 +69,6 @@
   margin: auto;
   overflow: hidden;
   margin:  auto ;
-
 }
 
 .title-email {
@@ -95,7 +115,8 @@
 
 .typing-container {
   background: none;
-  padding: 20px;
+  padding: 10px;
+  width: 390px;
 }
 
 .text {
@@ -112,12 +133,13 @@
 
 p.text2 {
   margin: 4px;
+  width: 250px;
   font-size: 14px;
   text-align: justify;
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid #000;
-  animation: typing 3.5s steps(60, end), blink-caret .65s step-end;
+  animation: typing 3.5s steps(60, end) forwards, blink-caret .65s step-end;
 }
 
 @keyframes typing {

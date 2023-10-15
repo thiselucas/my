@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgChartsModule } from 'ng2-charts';
 import { WorksComponent } from './works/works.component';
@@ -24,6 +24,7 @@ import { ProjectsComponent } from './projects/projects.component';
     CommonModule,
     NgChartsModule,
     ProjectsComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

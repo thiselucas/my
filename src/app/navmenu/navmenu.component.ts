@@ -1,9 +1,13 @@
-import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterModule } from '@angular/router';
+import { Router, RouterLink, RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from '../footer/footer.component';
+import { PersonalInformationComponent } from 'app/personal-information/personal-information.component';
+import { WorksComponent } from 'app/works/works.component';
+import { EmailComponent } from 'app/email/email.component';
+import { ProjectsComponent } from 'app/projects/projects.component';
 
 @Component({
   selector: 'app-navmenu',
@@ -15,31 +19,22 @@ import { FooterComponent } from '../footer/footer.component';
     MatIconModule,
     RouterModule,
     FooterComponent,
+    PersonalInformationComponent,
+    WorksComponent,
+    EmailComponent,
+    ProjectsComponent
   ],
   templateUrl: './navmenu.component.html',
   styleUrls: ['./navmenu.component.css'],
 })
-export class NavmenuComponent {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+export class  NavmenuComponent {
 
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
-    const links = this.el.nativeElement.querySelectorAll(".nav-menu a");
+  constructor(private el: ElementRef) {}
 
-    links.forEach((link: HTMLAnchorElement) => {
-      const targetId = link.getAttribute("href")?.substring(1); // Remove the "#" from href
-      const targetElement = document.getElementById(targetId || "");
-
-      if (targetElement) {
-        const rect = targetElement.getBoundingClientRect();
-
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-          this.renderer.setStyle(link, 'color', getComputedStyle(targetElement).color);
-        } else {
-          // Set a default color if the element is not visible
-          this.renderer.setStyle(link, 'color', '#fff');
-        }
-      }
-    });
+  scrollToSection(sectionId: string) {
+    const element = this.el.nativeElement.querySelector('#' + sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

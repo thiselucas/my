@@ -1,76 +1,90 @@
-<div class="works">
-  <h1 class="title left">Histórico Profissional <span>&#9660;</span></h1>
-  <div class="word-screen">
-    <div class="menu-bar">
-      <div class="grid-container">
-        <h1 class="title-email" style="width:451px">
-          Nova mensagem
-        </h1>
-        <div class="icons">
-          <mat-icon class="top-email">minimize</mat-icon>
-          <mat-icon class="top-email">clear</mat-icon>
-        </div>
+<div id="profissional">
+  <div class="pair-works">
+    <div class="works-information" data-animateblock-child>Histórico Profissional <span>&#9660;</span>
+      <div class="text-information">
+        <p>Ao lado, você poderá conferir todo o meu histórico profissionais, tais como: empresas trabalhadas,
+          cargos de exercício e atividades desempenhadas, período do contrato e remunerações.
+        </p>
+        <p>Para especificidades, é só clicar nos botões azuis, com o nome dos cargos, e verá suas respectivas
+          informações.
+        </p>
       </div>
-      <div class="document">
-        <mat-card>Destinatários</mat-card>
-        <br>
-        <mat-card>
-          <p class="text2">{{ textContent2 }}</p>
-        </mat-card>
-      </div>
-      <div class="status-bar">
-        <div class="typing-container">
-          <p class="text">{{ textContent }}</p>
-        </div>
-      </div>
-      <div>
-        <div fxLayout="column" fxLayoutAlign="center center" class="div-profissoes">
-          <div fxLayout="row wrap" fxLayoutAlign="center center">
-            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
-              <div class="vibrate">
-              <button mat-button (click)="openDialog(1)" class="custom-button" style="color: #fff">Desenvolvedor Front
-                End
-                (PJ)</button>
-              <button mat-button (click)="openDialog(2)" class="custom-button" style="color: #fff">Analista
-                Administrativo</button>
-              <button mat-button (click)="openDialog(3)" class="custom-button" style="color: #fff">Estagiário
-                CRA-RS</button>
-              <button mat-button (click)="openDialog(4)" class="custom-button" style="color: #fff">Estágio Prefeitura Municipal de Porto Alegre</button>
-              <button mat-button (click)="openDialog(5)" class="custom-button" style="color: #fff">Agente de
-                Atendimento</button>
-              <button mat-button (click)="openDialog(6)" class="custom-button" style="color: #fff">Estágio EPTC</button>
-              <button mat-button (click)="openDialog(7)" class="custom-button" style="color: #fff">Estágio Prefeitura Municipal de Porto Alegre</button>
-              <button mat-button (click)="openDialog(8)" class="custom-button" style="color: #fff">Estágio Digifile</button>
+      <div class="word-screen">
+        <div class="menu-bar">
+          <div class="grid-container">
+            <h1 class="title-email" style="width:451px">
+              Nova mensagem
+            </h1>
+            <div class="icons">
+              <mat-icon class="top-email">minimize</mat-icon>
+              <mat-icon class="top-email">clear</mat-icon>
+            </div>
+          </div>
+          <div class="document">
+            <mat-card>Destinatários</mat-card>
+            <br>
+            <mat-card>
+              <p class="text2">{{ textContent2 }}</p>
+            </mat-card>
+          </div>
+          <div class="status-bar">
+            <div class="typing-container">
+              <p class="text">{{ textContent }}</p>
+            </div>
+          </div>
+          <div>
+            <div fxLayout="column" fxLayoutAlign="center center" class="div-profissoes">
+              <div fxLayout="row wrap" fxLayoutAlign="center center">
+                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+                  <div class="vibrate">
+                    <button mat-button (click)="openDialog(1)" class="custom-button" style="color: #fff">Desenvolvedor
+                      Front
+                      End
+                      (PJ)</button>
+                    <button mat-button (click)="openDialog(2)" class="custom-button" style="color: #fff">Analista
+                      Administrativo</button>
+                    <button mat-button (click)="openDialog(3)" class="custom-button" style="color: #fff">Estagiário
+                      CRA-RS</button>
+                    <button mat-button (click)="openDialog(4)" class="custom-button" style="color: #fff">Estágio
+                      Prefeitura Municipal de Porto Alegre</button>
+                    <button mat-button (click)="openDialog(5)" class="custom-button" style="color: #fff">Agente de
+                      Atendimento</button>
+                    <button mat-button (click)="openDialog(6)" class="custom-button" style="color: #fff">Estágio
+                      EPTC</button>
+                    <button mat-button (click)="openDialog(7)" class="custom-button" style="color: #fff">Estágio
+                      Prefeitura Municipal de Porto Alegre</button>
+                    <button mat-button (click)="openDialog(8)" class="custom-button" style="color: #fff">Estágio
+                      Digifile</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="icon-grid">
-        <button class="rounded-button">
-          <div class="centered-button">
-            <div class="pulse">
-            <button mat-raised-button color="primary" (click)="downloadFile()" class="curriculo"> Baixe o currículo em PDF</button>
-            </div>
+          <div class="icon-grid">
+            <button class="rounded-button">
+              <div class="centered-button">
+                <div class="pulse">
+                  <button mat-raised-button color="primary" (click)="downloadFile()" class="curriculo"> Download Currículo PDF</button>
+                </div>
+              </div>
+            </button>
+            <mat-icon class="icons-email-a"> format_color_text</mat-icon>
+            <mat-icon class="icons-email"> attach_file</mat-icon>
+            <mat-icon class="icons-email">link</mat-icon>
+            <mat-icon class="icons-email"> insert_emoticon</mat-icon>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 32 32">
+              <path
+                d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z">
+              </path>
+            </svg>
+            <mat-icon class="icons-email"> insert_photo</mat-icon>
+            <mat-icon class="icons-email">https</mat-icon>
+            <mat-icon class="icons-email">edit</mat-icon>
+            <mat-icon class="icons-email">more_vert</mat-icon>
+            <mat-icon style="margin-left: auto;" class="icons-email">delete_outline</mat-icon>
           </div>
-          </button>
-        <mat-icon class="icons-email-a"> format_color_text</mat-icon>
-        <mat-icon class="icons-email"> attach_file</mat-icon>
-        <mat-icon class="icons-email">link</mat-icon>
-        <mat-icon class="icons-email"> insert_emoticon</mat-icon>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 32 32">
-          <path
-            d="M 11.4375 5 L 11.15625 5.46875 L 3.15625 18.46875 L 2.84375 18.96875 L 3.125 19.5 L 7.125 26.5 L 7.40625 27 L 24.59375 27 L 24.875 26.5 L 28.875 19.5 L 29.15625 18.96875 L 28.84375 18.46875 L 20.84375 5.46875 L 20.5625 5 Z M 13.78125 7 L 19.4375 7 L 26.21875 18 L 20.5625 18 Z M 12 7.90625 L 14.96875 12.75 L 8.03125 24.03125 L 5.15625 19 Z M 16.15625 14.65625 L 18.21875 18 L 14.09375 18 Z M 12.875 20 L 26.28125 20 L 23.40625 25 L 9.78125 25 Z">
-          </path>
-        </svg>
-        <mat-icon class="icons-email"> insert_photo</mat-icon>
-        <mat-icon class="icons-email">https</mat-icon>
-        <mat-icon class="icons-email">edit</mat-icon>
-        <mat-icon class="icons-email">more_vert</mat-icon>
-        <mat-icon style="margin-left: auto;" class="icons-email">delete_outline</mat-icon>
+        </div>
       </div>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
+</div>

@@ -8,8 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; /* Margem superior para espaçamento */
-  margin-bottom: 20px; /* Margem inferior para espaçamento */
+  margin-top: 10px; /* Margem superior para espaçamento */
   height: 100vh; /* Para centralizar verticalmente */
 }
 
@@ -37,19 +36,6 @@
   overflow: hidden;
   padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 div {
   align-items: center;
@@ -83,14 +69,81 @@ div {
   margin: 15px 15px auto;
 }
 
-
-
 .container {
   display: flex;
   justify-content: space-between;
 }
 
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+.column.smaller {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-column {
+  text-align: center;
+}
+
+
+
+.item {
+  background-color: #e0e0e0;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.fa {
+  color: #FFFFFF;
+  font: normal normal normal 50px;
+  margin-top: 0;
+}
+
+.fa:hover {
+  color: #00BFFF;
+  transform: scale(1.2);
+}
+
+
+.social-icons {
+  color: white; /* Cor dos ícones (branco) */
+  flex-direction:row; /* Alinhar verticalmente os ícones */
+  text-align: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+
+
+p {
+  font: 16px 'Space Grotesk', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
 
 
 

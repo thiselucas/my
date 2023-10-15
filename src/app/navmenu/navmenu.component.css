@@ -1,49 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&display=swap');
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  padding: 20px;
+.fixed-menu {
   position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  z-index: 1000;
+  width: 100%;
+  background: #1c58f8 !important;
+  z-index: 999;
 }
 
 .logo {
-  max-width: 150px;
+  margin: 0%;
+  width: 150px;
 }
 
-.nav-menu {
-  background-color: transparent;
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
-}
 
 ul {
   list-style: none;
-  display: flex;
-  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around; /* Alinha os links horizontalmente */
+  transition: background-color 0.3s; /* Transição suave para mudança de cor de fundo */
+  margin-bottom: 50px;
 }
 
+.nav-link {
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transição suave para mudança de cor de fundo */
+  color: #FFFF;
+  font: 28px 'Space Grotesk', sans-serif;
 
-.nav-menu li {
-  margin-right: 25px;
-  position: relative;
 }
 
-a {
-  text-decoration: none;
+.fixed-menu:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
   color: #fff;
-  font-size: 20px;
-  font-family: 'Major Mono Display', monospace;
 }
 
-/* Estilo quando o mouse estiver passando por cima */
-a:hover {
-  border-bottom: 12px solid #fff; /* Defina a cor e espessura da borda ao passar o mouse */
+
+
+.social-icons a {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 50px;
+  margin-bottom: 0;
+  text-decoration: none;
+  transition: color 0.3s;
 }
+
+  .social-icons a:hover {
+    color: #ff9800;
+  }
+

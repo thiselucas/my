@@ -1,19 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <img class="logo" src="../../assets/img/LucasLogo-removebg-preview.png" alt="Logo">
-  </header>
-  <nav class="nav-menu">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<router-outlet>
+  <nav class="fixed-menu">
     <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#profissional">Profissional</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#conversar">Vamos conversar</a></li>
+      <li (click)="scrollToSection('home')" class="nav-link">Home</li>
+      <li (click)="scrollToSection('profissional')" class="nav-link">Histórico Profissional</li>
+      <li (click)="scrollToSection('projetos')" class="nav-link">Projetos</li>
+      <li (click)="scrollToSection('conversar')" class="nav-link">Me envie uma mensagem</li>
     </ul>
+
   </nav>
-</body>
-</html>
+</router-outlet>
+
+
+<!-- Componentes de chamada do navmenu -->
+  <div id="home">
+    <app-personal-information></app-personal-information>
+  </div>
+  <div id="profissional">
+    <app-works></app-works>
+  </div>
+  <div id="projetos">
+    <app-projects></app-projects>
+  </div>
+  <div id="conversar">
+    <app-email></app-email>
+  </div>
+
+
+
+
+
+
+
+

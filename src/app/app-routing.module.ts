@@ -18,7 +18,7 @@ const routes: Routes = [
     path: 'conversar',
     component: EmailComponent,
     title: 'Me envie uma mensagem',
-  }, // Rota para a página de Conversar
+  },
 ];
 
 @NgModule({
