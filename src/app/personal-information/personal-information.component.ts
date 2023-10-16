@@ -10,23 +10,21 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   standalone: true,
   imports: [CommonModule, NavmenuComponent, FooterComponent, WorksComponent],
   templateUrl: './personal-information.component.html',
-  styleUrls: ['./personal-information.component.css']
+  styleUrls: ['./personal-information.component.css'],
 })
 export class PersonalInformationComponent {
   showVideo = false;
   videoUrl: SafeResourceUrl = '';
 
-
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
-    // Marque a URL do vídeo como segura
-    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl('../../assets/img/LucasEscotoDaLuz_Envio-De-Email-React_ Aplicação simples para envio de e-mail utilizando React - Google Chrome 2023-02-28 18-55-46.mp4');
+    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      '../../assets/img/LucasEscotoDaLuz_Envio-De-Email-React_ Aplicação simples para envio de e-mail utilizando React - Google Chrome 2023-02-28 18-55-46.mp4'
+    );
   }
 
   toggleVideo() {
     this.showVideo = !this.showVideo;
   }
-
-
 }

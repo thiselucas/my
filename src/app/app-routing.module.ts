@@ -7,18 +7,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { EmailComponent } from './email/email.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, title: 'Lucas Escoto da Luz' }, // Rota para a página inicial
-  {
-    path: 'profissional',
-    component: WorksComponent,
-    title: 'Histórico Profissional',
-  }, // Rota para a página de Profissional
-  { path: 'projetos', component: ProjectsComponent, title: 'Projetos' }, // Rota para a página de Projetos
-  {
-    path: 'conversar',
-    component: EmailComponent,
-    title: 'Me envie uma mensagem',
-  },
+  { path: '', component: HomeComponent, title: 'Lucas Escoto da Luz' },
+  { path: 'profissional',component: WorksComponent, title: 'Histórico Profissional'},
+  { path: 'projetos', component: ProjectsComponent, title: 'Projetos' },
+  { path: 'conversar', component: EmailComponent, title: 'Me envie uma mensagem'},
 ];
 
 @NgModule({

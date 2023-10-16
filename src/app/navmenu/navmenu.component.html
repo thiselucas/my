@@ -1,6 +1,5 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <router-outlet>
   <nav class="fixed-menu">
     <ul>
@@ -9,29 +8,18 @@
       <li (click)="scrollToSection('projetos')" class="nav-link">Projetos</li>
       <li (click)="scrollToSection('conversar')" class="nav-link">Me envie uma mensagem</li>
     </ul>
-
   </nav>
 </router-outlet>
 
-
-<!-- Componentes de chamada do navmenu -->
-  <div id="home">
-    <app-personal-information></app-personal-information>
-  </div>
-  <div id="profissional">
-    <app-works></app-works>
-  </div>
-  <div id="projetos">
-    <app-projects></app-projects>
-  </div>
-  <div id="conversar">
-    <app-email></app-email>
-  </div>
-
-
-
-
-
-
-
-
+<div id="home">
+  <app-personal-information></app-personal-information>
+</div>
+<div id="profissional">
+  <app-works></app-works>
+</div>
+<div id="projetos">
+  <app-projects></app-projects>
+</div>
+<div id="conversar">
+  <app-email></app-email>
+</div>

@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&display=swap');
 
 p {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
-  color: #333;
-  text-align: justify;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 20px;
+	color: #333;
+	text-align: justify;
 }
 
 h1 {
-  font-family: 'Major Mono Display', monospace;
-  font-weight: bold;
-  color: #00FFFF;
-  font-size: 30px;
+	font-family: 'Major Mono Display', monospace;
+	font-weight: bold;
+	color: #00FFFF;
+	font-size: 30px;
 }
 
 mat-stepper {
-  background-image: linear-gradient(to bottom, #808080	, #87CEFA);
+	background-image: linear-gradient(to bottom, #808080	, #87CEFA);
 }
 

@@ -5,6 +5,7 @@ marquee {
   padding: 10px; /* Espaçamento interno */
   margin-top: 0;
   margin-bottom: 0;
+  height: 250px;
 }
 
 .logo {

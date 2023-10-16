@@ -36,7 +36,6 @@ import { WorksComponent } from 'app/works/works.component';
                   [(ngModel)]="name"
                   name="name"
                 />
-
                 <input
                   class="input"
                   type="text"
@@ -44,7 +43,6 @@ import { WorksComponent } from 'app/works/works.component';
                   [(ngModel)]="email"
                   name="email"
                 />
-
                 <textarea
                   class="textarea"
                   placeholder="Digite sua mensagem..."
@@ -71,12 +69,12 @@ import { WorksComponent } from 'app/works/works.component';
       </div>
       <div class="column smaller">
         <div class="left-column">
-        <img src="../../assets/img/avatar.png" alt="" class="avatar"/>
-        <p>Se preferir, poderá me contatar diretamente pelo Linkedin, Whatsapp e também conferir os meus repositórios
-          no GitHub.
-        </p>
+          <img src="../../assets/img/avatar.png" alt="" class="avatar" />
+          <p>
+            Se preferir, poderá me contatar diretamente pelo Linkedin, Whatsapp
+            e também conferir os meus repositórios no GitHub.
+          </p>
           <div class="social-icons">
-
             <a href="#" target="_blank">
               <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
@@ -84,9 +82,8 @@ import { WorksComponent } from 'app/works/works.component';
               <i class="fa fa-linkedin"></i>
             </a>
             <a href="#" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
+              <i class="fa fa-github" aria-hidden="true"></i>
             </a>
-
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ export class WorksComponent {
 
   constructor(public dialog: MatDialog, private snackBar: MatSnackBar) {}
   @Input() textContent2: string = 'Assunto: Apresentação Profissional';
-  @Input() textContent: string = 'Confira minhas experiências profissionais:'
+  @Input() textContent: string = 'Confira minhas experiências profissionais:';
 
   mostrarCaixaDeTexto1 = false;
   mostrarCaixaDeTexto2 = false;

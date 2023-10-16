@@ -13,6 +13,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #F5F5F5;
+  margin-top: 10%;
 }
 
 p {
@@ -22,6 +23,7 @@ p {
   font: 20px 'Space Grotesk', sans-serif;
   color: #7C7C7C;
 }
+
 .works-information {
   line-height: 1.1;
   max-width: 1200px;
@@ -30,11 +32,9 @@ p {
   align-items: justify;
   font: 48px 'Major Mono Display', monospace;
   color: #1c58f8;
-
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-
-
-
 
 .title {
   background: none;
@@ -42,7 +42,6 @@ p {
   color: #fff;
   padding: 10px;
 }
-
 
 @keyframes pulse {
   0% {
@@ -79,7 +78,6 @@ p {
   font-family: 'Roboto', sans-serif;
   margin: auto 20px;
 }
-
 
 .top-email {
   background: none;
@@ -223,15 +221,14 @@ width: 650px;
   font-size: 24px;
 }
 
-
 .icons-email-a {
   margin-right: -10px;
 }
+
 .icons-email {
   color: #000;
   margin-left: 20px;
 }
-
 
 h1 {
   text-align: center;
@@ -247,7 +244,7 @@ div.centered-button {
 
 .curriculo {
   font-family: 'Major Mono Display', monospace;
-  padding: 25px;
+  padding: 20px;
 }
 
 .curriculo:hover {
@@ -267,8 +264,6 @@ div.centered-button {
   margin: 8px;
 }
 
-
-
 button {
   padding: 10px 20px;
   border: none;
@@ -282,6 +277,3 @@ button {
 button:hover {
   background-color: #2980b9;
 }
-
-
-

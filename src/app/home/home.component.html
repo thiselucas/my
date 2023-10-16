@@ -1,23 +1,23 @@
 <div class="no-scrollbar">
-<div id="works-section">
-  <div class="apresentacao">
-    <div *ngIf="showProgressBar; else siteContent" class="progress-container">
-      <div class="progress-bar" [style.width.%]="progressValue"></div>
-      <div class="progress-text">{{ progressValue }}%</div>
-      <div class="container">
+  <div id="works-section">
+    <div class="apresentacao">
+      <div *ngIf="showProgressBar; else siteContent" class="progress-container">
+        <div class="progress-bar" [style.width.%]="progressValue"></div>
+        <div class="progress-text">{{ progressValue }}%</div>
+        <div class="container">
 
-        <div class="status-bar">
-          <div class="typing-container">
-            <p class="text">{{ textContent }}</p>
+          <div class="status-bar">
+            <div class="typing-container">
+              <p class="text">{{ textContent }}</p>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
+    <ng-template #siteContent>
+      <app-navmenu></app-navmenu>
+      <app-footer></app-footer>
+    </ng-template>
   </div>
-  <ng-template #siteContent>
-    <app-navmenu></app-navmenu>
-    <app-footer></app-footer>
-  </ng-template>
-</div>
 </div>

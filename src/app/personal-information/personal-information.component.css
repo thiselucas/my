@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Julius+Sans+One&family=Major+Mono+Display&family=Raleway:wght@100&family=Roboto&family=Space+Grotesk:wght@300&display=swap');
 
-
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -13,7 +12,6 @@
   }
 }
 
-
 .contact {
   animation: pulse 4s infinite;
 }
@@ -21,8 +19,6 @@
 .about-me-title {
   animation: pulse 1s infinite;
 }
-
-
 
 .about-content-main {
   display: flex;
@@ -37,9 +33,7 @@
   color: #FFFFFF;
   font-size: 1.6rem;
   padding: 0.5rem 3rem;
-
   background-color: #0B57D0;
-
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -50,10 +44,8 @@
   background-color: #0099CC;
 }
 
-
 .about-content {
   align-items: center;
-
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
@@ -69,6 +61,7 @@
   width: 100%;
   height: 950px;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .about-me-title {
@@ -78,8 +71,6 @@
   font-size: 2.8rem;
   margin-bottom: 3rem
 }
-
-
 
 .span.about-me-title::after {
   padding: 0;
@@ -108,7 +99,6 @@
   text-align: justify;
   margin-left: 20px;
 }
-
 
 .about_-content-details:last-child {
   margin-bottom: 4em;
@@ -141,8 +131,6 @@
   color: #fff;
 }
 
-
-
 .skills-skill::before,
 .skills-skill::after {
   content: '';
@@ -156,13 +144,11 @@
   transition: transform 0.3s ease-in-out;
 }
 
-
 .skills-skill:hover::before,
 .skills-skill:hover::after {
   transform: scaleX(1); /* Expandir largura no hover */
   transition: transform 0.3s ease-in-out;
 }
-
 
 .video-container {
   display: none;
