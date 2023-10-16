@@ -74,15 +74,15 @@ import { WorksComponent } from 'app/works/works.component';
             Se preferir, poderá me contatar diretamente pelo Linkedin, Whatsapp
             e também conferir os meus repositórios no GitHub.
           </p>
-          <div class="social-icons">
-            <a href="#" target="_blank">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            </a>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com/in/thislucas/" target="_blank">
               <i class="fa fa-linkedin"></i>
             </a>
-            <a href="#" target="_blank">
+            <a href="https://github.com/thiselucas" target="_blank">
               <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <div class="social-icons">
+            <a href="https://wa.me/5551996251212" target="_blank">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
           </div>
         </div>
